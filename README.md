@@ -9,29 +9,48 @@ The dataset used for this project is the Heart Attack Analysis & Prediction Data
 Dataset provided by the instructor.
 ### *Features:*
 age: Age of the patient
+
 sex: Gender (1 = male, 0 = female)
+
 cp: Chest pain type
+
 trtbps: Resting blood pressure
-chol: Serum cholesterol
+
+chol: Serum cholesterol 
+
 fbs: Fasting blood sugar
+
 restecg: Resting electrocardiographic results
+
 thalachh: Maximum heart rate achieved
+
 exng: Exercise induced angina
+
 oldpeak: Depression induced by exercise relative to rest
+
 slp: Slope of the peak exercise ST segment
+
 caa: Number of major vessels colored by fluoroscopy
+
 thall: Thalassemia
+
 output: Heart attack (1 = yes, 0 = no) – Target Variable
+
 Size: The dataset consists of 303 rows and 14 columns .
 
 ## Algorithms Used
 Several machine learning algorithms were tested to classify the dataset:
 
 K-Nearest Neighbors (KNN)
+
 Support Vector Machines (SVM)
+
 AdaBoost
+
 Random Forest
+
 Decision Tree
+
 Logistic Regression
 
 These algorithms were evaluated after performing hyperparameter tuning using GridSearch and cross-validation to enhance accuracy and robustness.
@@ -82,10 +101,15 @@ pip install -r requirements.txt
 The project is implemented in the classif_homework.ipynb Jupyter notebook. To run the notebook, open it in Jupyter Notebook or JupyterLab and execute the cells in order.
 
 1.Load the dataset.
+
 2.Preprocess the data, balance the target variable.
+
 3.Apply various classification algorithms.
+
 4.Perform hyperparameter tuning using GridSearch.
+
 5.Evaluate the models and compare their performance.
+
 6.Choose the best model based on the comparative study.
 
 ## Results and Conclusion
