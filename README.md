@@ -22,7 +22,7 @@ slp: Slope of the peak exercise ST segment
 caa: Number of major vessels colored by fluoroscopy
 thall: Thalassemia
 output: Heart attack (1 = yes, 0 = no) – Target Variable
-Size: The dataset consists of X rows and Y columns (e.g., 303 rows and 14 columns).
+Size: The dataset consists of 303 rows and 14 columns .
 
 ## Algorithms Used
 Several machine learning algorithms were tested to classify the dataset:
@@ -40,24 +40,31 @@ These algorithms were evaluated after performing hyperparameter tuning using Gri
 To ensure the models perform optimally, the following steps were applied:
 
 1.Data Balancing: Used RandomUndersampler and SMOTE to balance the target variable and mitigate class imbalance.
+
 2.GridSearch with Cross-Validation: Hyperparameters for each model were optimized using GridSearch, which helps identify the best parameter combinations and ensures the models generalize well.
 
 ## Model Evaluation
 Each model was evaluated using the following metrics:
 
 -Accuracy: Overall prediction accuracy.
+
 -Precision, Recall, F1-score: Metrics to evaluate model performance in detail.
+
 -Cross-validation: Ensures that the model generalizes well to unseen data and reduces the risk of overfitting.
 
 ## Comparative Study
 After evaluating the models, the following performance was observed:
 
 Best Performers: Logistic Regression and KNN, with an accuracy of 87%.
+
 Moderate Performers: SVM and AdaBoost, both achieving 84% accuracy.
+
 Lower Performers: Decision Tree and Random Forest showed more modest performance compared to the other algorithms.
 
 ## Final Choice
-The final model choice will be based on a combination of its accuracy and its ability to generalize effectively to unseen data. Logistic Regression and KNN models have shown the highest accuracy, making them suitable choices, but care must be taken to avoid overfitting and ensure robust performance across both training and test datasets.
+The final model choice will be based on a combination of its accuracy and its ability to generalize effectively to unseen data.
+
+Logistic Regression and KNN models have shown the highest accuracy, making them suitable choices, but care must be taken to avoid overfitting and ensure robust performance across both training and test datasets.
 
 ## Installation and Setup
 To run this project, follow the instructions below:
